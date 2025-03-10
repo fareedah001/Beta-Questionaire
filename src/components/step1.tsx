@@ -213,23 +213,18 @@ function Demo1() {
       <NativeSelect
         label="  2. How many properties do you currently manage?"
         description=""
-        data={[
-          "  Choose an option",
-          "Property Owner",
-          "Property Manager",
-          "Real Estate Agent",
-          "Other",
-        ]}
+        data={["  Choose an option", "1-5", "6-20", "21-50", "50+"]}
       />
       <NativeSelect
         label="   3. What types of properties do you manage? (Select all that apply)"
         description=""
         data={[
           "  Choose an option",
-          "Property Owner",
-          "Property Manager",
-          "Real Estate Agent",
-          "Other",
+          " Residential Single-Family",
+          "  Multi-Family Units",
+          " Commercial Properties",
+          " Short-term Rentals",
+          " Other(please specify)",
         ]}
       />
     </div>

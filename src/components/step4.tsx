@@ -14,20 +14,23 @@ function Demo4() {
         //   "Other",
         // ]}
       />
+      <h3 className="text-lg font-semibold text-gray-700 mb-4 text-size-20">
+        ADDITIONAL INFORMATION
+      </h3>
       <NativeSelect
         label="  11. What would make this beta testing experience successful for you?
 ?"
         description=""
         data={[
           "  Choose an option",
-          "Property Owner",
-          "Property Manager",
-          "Real Estate Agent",
-          "Other",
+          "  Email",
+          " In-app notifications",
+          "Text messages",
+          " Phone calls",
         ]}
       />
       <NativeSelect
-        label="   312 Is there anything else you'd like us to know?"
+        label="   12. Is there anything else you'd like us to know?"
         description=""
         // data={[
         //   "  Choose an option",
