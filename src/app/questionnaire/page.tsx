@@ -57,10 +57,10 @@ export default function Demo() {
         </Stepper.Completed>
       </Stepper>
 
-      <Group justify="center" mt="xl">
-        <Button variant="default" onClick={prevStep}>
+      <Group justify="center" mt="xl" bg="black" color="white">
+        {/* <Button variant="default" onClick={prevStep}>
           Back
-        </Button>
+        </Button> */}
         <Button onClick={nextStep}>Continue</Button>
       </Group>
     </>
