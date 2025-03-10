@@ -179,27 +179,38 @@
 // }
 // export default Wrapper;
 
-import { NativeSelect } from "@mantine/core";
+import { Center, NativeSelect } from "@mantine/core";
 
 function Demo1() {
   return (
-    <div>
-      <h2 className="text-xl font-semibold text-gray-900 text-center mb-2">
+    <div style={{ maxWidth: 1000, margin: "auto" }}>
+      <h2
+        className="text-xl font-semibold text-gray-900 text-center mb-2 place-items-center "
+        // style={{ pl }}
+      >
         BETA USER QUESTIONNAIRE
       </h2>
-      <p className="text-center text-gray-600 mb-6">
-        <strong className="text-blue-600 text-size-16">
-          Thank you for participating in our beta program!
-        </strong>{" "}
+      <p
+        style={{ marginBottom: 40 }}
+        //  className="text-center text-gray-600 mb-6"
+      >
+        {/* <strong className="text-blue-600 text-size-16"> */}
+        Thank you for participating in our beta program!
+        {/* </strong>{" "} */}
         Please help us understand your needs better by answering the following
         questions.
       </p>
 
       {/* Basic Information */}
-      <h3 className="text-lg font-semibold text-gray-700 mb-4 text-size-20">
+      <h3
+        className="text-lg font-semibold text-gray-700 mb-4 text-size-20"
+        style={{ marginBottom: 20 }}
+      >
         BASIC INFORMATION
       </h3>
+
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label=" 1. What is your primary role in property management?"
         description=""
         data={[
@@ -211,11 +222,13 @@ function Demo1() {
         ]}
       />
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="  2. How many properties do you currently manage?"
         description=""
         data={["  Choose an option", "1-5", "6-20", "21-50", "50+"]}
       />
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="   3. What types of properties do you manage? (Select all that apply)"
         description=""
         data={[

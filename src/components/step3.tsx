@@ -2,14 +2,17 @@ import { NativeSelect } from "@mantine/core";
 
 function Demo3() {
   return (
-    <div>
-      <h2 className="text-xl font-semibold text-gray-900 text-center mb-2">
+    <div style={{ maxWidth: 1000, margin: "auto" }}>
+      <h2 className="text-xl font-semibold text-gray-900 text-center mb-2 place-items-center ">
         BETA USER QUESTIONNAIRE
       </h2>
-      <p className="text-center text-gray-600 mb-6">
-        <strong className="text-blue-600 text-size-16">
-          Thank you for participating in our beta program!
-        </strong>{" "}
+      <p
+        style={{ marginBottom: 40 }}
+        // {/* // className="text-center text-gray-600 mb-6"
+      >
+        {/* <strong className="text-blue-600 text-size-16"> */}
+        Thank you for participating in our beta program!
+        {/* // </strong>{" "} */}
         Please help us understand your needs better by answering the following
         questions.
       </p>
@@ -19,6 +22,7 @@ function Demo3() {
         TECHNOLOGY COMFORT
       </h3>
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label=" 7. How would you rate your comfort level with new software applications?"
         description=""
         data={[
@@ -34,6 +38,7 @@ function Demo3() {
         FEATURE PRIORITIES
       </h3>
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="  8. Which features are most important to you? (Rank from 1-5, 1 being most important)
 ?"
         description=""
@@ -50,8 +55,9 @@ function Demo3() {
         GOALS
       </h3>
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="   9. What are your main goals for using our property management platform?"
-        description=""
+
         // data={[
         //   "  Choose an option",
         //   "Property Owner",

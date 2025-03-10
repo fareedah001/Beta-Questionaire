@@ -6,7 +6,8 @@ import Demo4 from "@/components/step4";
 // import { NativeSelect } from "@mantine/core";
 import { useState } from "react";
 import { Stepper, Button, Group } from "@mantine/core";
-// import Wrapper from "@/components/step1";
+
+import RecurrentLogo from "@/components/image";
 
 export default function Demo() {
   const [active, setActive] = useState(1);
@@ -17,13 +18,15 @@ export default function Demo() {
 
   return (
     <>
+      <RecurrentLogo />;
       <Stepper
+        style={{ maxWidth: 1500, margin: "auto" }}
         active={active}
         onStepClick={setActive}
         allowNextStepsSelect={false}
       >
         <Stepper.Step
-          label="First step"
+          label=" step 1"
           description="This would take 2 mins to complete"
         >
           {/* <Wrapper /> */}
@@ -56,8 +59,7 @@ export default function Demo() {
           Completed, click back button to get to previous step
         </Stepper.Completed>
       </Stepper>
-
-      <Group justify="center" mt="xl" bg="black" color="white">
+      <Group justify="flex-end" pr={30} mt={30}>
         {/* <Button variant="default" onClick={prevStep}>
           Back
         </Button> */}

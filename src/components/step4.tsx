@@ -2,8 +2,23 @@ import { NativeSelect } from "@mantine/core";
 
 function Demo4() {
   return (
-    <div>
+    <div style={{ maxWidth: 1000, margin: "auto" }}>
+      <h2 className="text-xl font-semibold text-gray-900 text-center mb-2 place-items-center ">
+        BETA USER QUESTIONNAIRE
+      </h2>
+      <p
+        style={{ marginBottom: 20 }}
+
+        // className="text-center text-gray-600 mb-6"
+      >
+        {/* <strong className="text-blue-600 text-size-16"> */}
+        Thank you for participating in our beta program!
+        {/* </strong>{" "} */}
+        Please help us understand your needs better by answering the following
+        questions.
+      </p>
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label=" 10. What would make this beta testing experience successful for you?"
         description=""
         // data={[
@@ -18,6 +33,7 @@ function Demo4() {
         ADDITIONAL INFORMATION
       </h3>
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="  11. What would make this beta testing experience successful for you?
 ?"
         description=""
@@ -30,6 +46,7 @@ function Demo4() {
         ]}
       />
       <NativeSelect
+        style={{ marginBottom: 20 }}
         label="   12. Is there anything else you'd like us to know?"
         description=""
         // data={[
