@@ -6,6 +6,8 @@ import {
   ColorSchemeScript,
   MantineProvider,
   mantineHtmlProps,
+  Container,
+  NativeSelect,
 } from "@mantine/core";
 
 export const metadata = {
@@ -24,7 +26,11 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <Container size={1512} h={982}>
+            {children}
+          </Container>
+        </MantineProvider>
       </body>
     </html>
   );

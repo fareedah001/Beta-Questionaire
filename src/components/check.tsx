@@ -1,14 +1,13 @@
 import Image from "next/image";
-import sign from "../../Logo.png";
-export default function RecurrentLogo() {
+import sign from "../../Check_Big@2x.png";
+export default function Check_Big() {
   return (
     <Image
       src={sign}
       alt="Mantine logo"
-      width={190.78}
-      height={35}
+      width={100}
+      height={50}
       style={{ marginTop: "50px", marginLeft: "20px", marginBottom: "20px" }}
     />
   );
 }
-// export default RecurrentLogo;

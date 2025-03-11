@@ -3,6 +3,8 @@ import Demo1 from "@/components/step1";
 import Demo2 from "@/components/step2";
 import Demo3 from "@/components/step3";
 import Demo4 from "@/components/step4";
+import Submit from "@/components/submit";
+
 // import { NativeSelect } from "@mantine/core";
 import { useState } from "react";
 import { Stepper, Button, Group } from "@mantine/core";
@@ -20,13 +22,17 @@ export default function Demo() {
     <>
       <RecurrentLogo />;
       <Stepper
-        style={{ maxWidth: 1500, margin: "auto" }}
+        color="#EC6544"
+        size={"xs"}
+        style={{ Width: 1137, height: 47, margin: "auto" }}
         active={active}
         onStepClick={setActive}
+        styles={{ stepIcon: { height: "18px", width: "18px" } }}
         allowNextStepsSelect={false}
       >
         <Stepper.Step
-          label=" step 1"
+          // styles={{ padd: "250px" }}
+          label=" Step 1"
           description="This would take 2 mins to complete"
         >
           {/* <Wrapper /> */}
@@ -34,21 +40,21 @@ export default function Demo() {
           {/* Step 1 content: Create an account */}
         </Stepper.Step>
         <Stepper.Step
-          label="Second step"
+          label=" Step 2 "
           description="This would take 2 mins to complete"
         >
           {/* Step 2 content: Verify email */}
           <Demo2 />
         </Stepper.Step>
         <Stepper.Step
-          label="Final step"
+          label="Step 3"
           description="This would take 2 mins to complete"
         >
           {/* Step 3 content: Get full access */}
           <Demo3 />
         </Stepper.Step>
         <Stepper.Step
-          label="Final step"
+          label="Step 4"
           description="This would take 2 mins to complete"
         >
           {/* Step 4 content: Get full access */}
@@ -65,6 +71,7 @@ export default function Demo() {
         </Button> */}
         <Button onClick={nextStep}>Continue</Button>
       </Group>
+      <Submit />
     </>
   );
 }
