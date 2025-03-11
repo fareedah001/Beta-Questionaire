@@ -4,6 +4,7 @@ import Demo2 from "@/components/step2";
 import Demo3 from "@/components/step3";
 import Demo4 from "@/components/step4";
 import Submit from "@/components/submit";
+import Check_Big from "@/components/check";
 
 // import { NativeSelect } from "@mantine/core";
 import { useState } from "react";
@@ -62,7 +63,8 @@ export default function Demo() {
         </Stepper.Step>
 
         <Stepper.Completed>
-          Completed, click back button to get to previous step
+          hi
+          <Submit />
         </Stepper.Completed>
       </Stepper>
       <Group justify="flex-end" pr={30} mt={30}>
@@ -71,7 +73,6 @@ export default function Demo() {
         </Button> */}
         <Button onClick={nextStep}>Continue</Button>
       </Group>
-      <Submit />
     </>
   );
 }
