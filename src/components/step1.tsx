@@ -10,6 +10,7 @@ function Demo1() {
     setActive((current) => (current > 0 ? current - 1 : current));
 
   return (
+    // active={active}
     <div style={{ maxWidth: 1000, margin: "auto" }}>
       <h2
         className="text-xl font-semibold text-gray-900 text-center mb-2 place-items-center "
@@ -67,19 +68,14 @@ function Demo1() {
           " Other(please specify)",
         ]}
       />
-      <Group
-        justify="flex-end"
-        pr={30}
-        mt={30}
-        //  active={active}
-      >
-        {/* <Button variant="default" onClick={prevStep}>
+      {/* <Group justify="flex-end" pr={30} mt={30}> */}
+      {/* <Button variant="default" onClick={prevStep}>
                 Back
               </Button> */}
-        <Button onClick={nextStep} c={"white"} bg={"black"}>
+      {/* <Button onClick={nextStep} c={"white"} bg={"black"}>
           Continue
         </Button>
-      </Group>
+      </Group> */}
     </div>
   );
 }

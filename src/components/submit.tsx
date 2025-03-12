@@ -22,10 +22,12 @@ function Submit() {
         }}
       >
         <TypographyStylesProvider>
-          <h1 style={{ color: "#5A9C6E" }}>Questionnaire submitted!</h1>
-          <p style={{ width: 500 }}>
+          <h1 style={{ color: "#5A9C6E", fontSize: 80 }}>
+            Questionnaire submitted!
+          </h1>
+          <p style={{ width: 500, marginLeft: 200, textAlign: "center" }}>
             You're one step closer to joining the{" "}
-            <strong color="black">recurrent beta program.</strong> Keep an eye
+            <strong color="#86858D">recurrent beta program.</strong> Keep an eye
             out for an email with your sign-up link. We're eager to have you on
             board.
           </p>

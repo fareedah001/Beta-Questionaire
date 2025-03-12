@@ -68,14 +68,14 @@ function Demo4() {
         //   "Other",
         // ]}
       />
-      <Group justify="flex-end" pr={30} mt={30}>
-        {/* <Button variant="default" onClick={prevStep}>
+      {/* <Group justify="flex-end" pr={30} mt={30}> */}
+      {/* <Button variant="default" onClick={prevStep}>
                 Back
               </Button> */}
-        <Button onClick={nextStep} c={"white"} bg={"black"}>
+      {/* <Button onClick={nextStep} c={"white"} bg={"black"}>
           Submit
         </Button>
-      </Group>
+      </Group> */}
     </div>
   );
 }
